@@ -1,10 +1,17 @@
-sudo: false
 language: node_js
+node_js:
+  - 6 # Maintenance
+  - 8 # Active
+  - 10 # Current release
 
 branches:
   only:
     - master
     - next
+
+script:
+  - cd functions
+  - npm run lint
 
 deploy:
   provider: firebase
