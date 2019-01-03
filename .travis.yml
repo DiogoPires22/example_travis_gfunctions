@@ -11,6 +11,7 @@ script:
   - cd functions
   - npm install
   - npm run lint
+  - cd ..
 
 deploy:
   provider: firebase
