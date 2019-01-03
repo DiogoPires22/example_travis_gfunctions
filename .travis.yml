@@ -1,9 +1,7 @@
 language: node_js
 node_js:
-  - 6 # Maintenance
-  - 8 # Active
-  - 10 # Current release
-
+  - 6
+  - 8
 branches:
   only:
     - master
@@ -11,6 +9,7 @@ branches:
 
 script:
   - cd functions
+  - npm install
   - npm run lint
 
 deploy:
