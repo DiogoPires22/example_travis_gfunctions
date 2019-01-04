@@ -4,11 +4,8 @@ node_js:
 branches:
   only:
     - master
-
-install:
-  - npm install
-
 script:
+  - npm install
   - cd functions
   - npm run lint
   - npm run test
@@ -17,5 +14,5 @@ script:
 deploy:
   provider: firebase
   token:
-    secure: 'bxMHUbwtiGYUSMzDy16tTrMIU4dLeliT2Nnm/OBc7emjfU22R5knP8AhPA0FPO5jTyYbpTm0n7LcKugTPamIlnlxWMd26dOnyySUNmy9R89KtNiNUrzag9o6cd5IuVJwOrddBfBLsHoFAxHWlfE/bzKurj6a8bqKeUJApgHi/RaPPt4hGW9Jw7jm7j5nfq2dafpYYkaxxoDfSgU+dg1rb1k/GWdOgAFvq/LSDMeSpo5NDUQ1k5GNrEi0yOe5WeruyNZZ2OMncKPoQdksPvfQ+6RshYYaEV3FN6equbYgs3c6oGl/PEljzF2/xpL1LTWajbnp1awu85Ui1vzYtX4UkTXpEQxZwXkcdDuSHgOjsKWRxuK/Fl7DdqtLB2ESbNRjwBGJjOm9J2bzeRTSLvRg9QB1P5k0ODOPU7ApIwYaDwaHh6QlVHWe6rYINkOUwGY05zPm9/lMQJf2jslSKCfyCSbnlcnIlNWfZcoUlc2V8WQE0z7YkalSXliAzP+oHYhRqUetQbv1Af+w6CMzt4zgpwZLRlLaRQNK7gvoDqvVyHW8ExM4xxv0zu6FiIfTB6APTbe0O8iOmSGx6mwf+///P3OF8lFm+gv86OHe3QuA1Jyx+T+8Qla+1a76rJILicqqkqPdE/p4gOJVPMOlzcKbZMy7hielVF5HQU8UUHTJuI0='
+    secure: 'vZwe8ef2owy9af2ZUZglQ5PzXcCPnhw7auFLPZddkvpEyToyUiBLBOnjzz7CFgdy+eL2Mv/KqXO0tsyiBHbif5YW0962WQynVcg4ASGwfTN/p0JJBbzre7n2mvQwCBwO/dPFfDu6wJaqJVL4gi4yoE000rPOWu2vqd8mpnSpgKFmfwloqXQBqbsWupzBr4Dah4t4OikR+dmIVsUfKyaj0DPFOBlF8v5MUCyh9gSc1INbk3yRERAfhL+Ne8DuSUFkMo6GTxd9DuJizdAP5h5iUnvZtXqS5xjHs9NCNl0IASrSjbTC+gFiB8B7YY3Zbc+D1uM4jg8/NfLvQe+4BoDZRQ8u5ztC82KR6hxOw8gJxE3q6YMVSziDVpmNg3skRIiEpG1e7KHm9P1C9ffSQdpPX9PNfy2oaVjRNlq1yn28Fc3KijB0E2HSJUIdJ5oCRXkymwIa6HD00LL0r9UsqgCmt61QatcT522FSogm7XiUhNN8k29xbll3J/FdmXH/lBWQib9Pt90JVwIBWyKLx7eevooi5MkDqwom6HHqCV5llb174yOAk1c4oWwd1hYS0ejp+po+nPgFvR+3w49aNvd3lI//KWKJ0MTinWe8k8AFJ6s/l4KiAObsldmP6hOjcuzkOY+5n6QIi6nohwx+gsmHYlcWt/XGgPufVstyHUMSPH0='
   skip_cleanup: true
