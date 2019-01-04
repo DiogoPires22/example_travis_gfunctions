@@ -1,11 +1,9 @@
 language: node_js
 node_js:
   - 6
-  - 8
 branches:
   only:
     - master
-    - next
 
 script:
   - cd functions
@@ -16,5 +14,5 @@ script:
 deploy:
   provider: firebase
   token:
- secure: "qaZIdF1dMZWz+LSNyVnPf/JY69/IlFxA5+VA+GYwumrtuHnP+pyD4qjQ8mUL7bWKRx1KWYdgj/PrnXglwDnQF11sR67GJE3xhySjCM0/7bONrmSrFAuwBpemOx0Prk4g5FxEgfbbTZTjCBh+3XYc6/MuR9F0i+SDoHOEldRld0kOwLfEr28EIhuJlchFRZ1X7vpgDR25D8isT56Z0wY/76U9NlKTWlzdtV300Xh7J1EyI7nQZDHoyNmJN/RvG5am+QFwBpZ1xDIJDV6T3K5PySXlrQJInWRCK1T9wRGYSxjgEiFXdsUc7eJxqLRYeMizmLEvr/CL/OPbT1Xn8xcWlZXHBXE+M6If+Gp2B5fhLx/3WTV3LXM7QgfRUbj+bQWsdwpBUa/b9Djp70uW4HKHMdARuY3htPzc3bg2cf8JiMMkdzGNEtE9Sy+xrxKOECc8YjifSrwaqVU7QURibnkU9lb56GqlYT1RTsH1gB7gIerAAYQidSP6tl91ZFfYzEug1uwUU/5gmnLLOox0D8QmJ6oB56d4s343ldoYEPCeoakSU6yQ2xetLShvXBxxVic9cy/Tl0a0uCkDcXHHVDjPERZ0F8Ssh1v+pKvHdIpMK0Pc0EOT4nw7LXQSTo1Gss7ov3o58d56R8Lv+UyUEJwZ25ghQwWD9GyK/CzhOtje0xM="
- skip_cleanup: true
+  secure: 'bxMHUbwtiGYUSMzDy16tTrMIU4dLeliT2Nnm/OBc7emjfU22R5knP8AhPA0FPO5jTyYbpTm0n7LcKugTPamIlnlxWMd26dOnyySUNmy9R89KtNiNUrzag9o6cd5IuVJwOrddBfBLsHoFAxHWlfE/bzKurj6a8bqKeUJApgHi/RaPPt4hGW9Jw7jm7j5nfq2dafpYYkaxxoDfSgU+dg1rb1k/GWdOgAFvq/LSDMeSpo5NDUQ1k5GNrEi0yOe5WeruyNZZ2OMncKPoQdksPvfQ+6RshYYaEV3FN6equbYgs3c6oGl/PEljzF2/xpL1LTWajbnp1awu85Ui1vzYtX4UkTXpEQxZwXkcdDuSHgOjsKWRxuK/Fl7DdqtLB2ESbNRjwBGJjOm9J2bzeRTSLvRg9QB1P5k0ODOPU7ApIwYaDwaHh6QlVHWe6rYINkOUwGY05zPm9/lMQJf2jslSKCfyCSbnlcnIlNWfZcoUlc2V8WQE0z7YkalSXliAzP+oHYhRqUetQbv1Af+w6CMzt4zgpwZLRlLaRQNK7gvoDqvVyHW8ExM4xxv0zu6FiIfTB6APTbe0O8iOmSGx6mwf+///P3OF8lFm+gv86OHe3QuA1Jyx+T+8Qla+1a76rJILicqqkqPdE/p4gOJVPMOlzcKbZMy7hielVF5HQU8UUHTJuI0='
+  skip_cleanup: true
