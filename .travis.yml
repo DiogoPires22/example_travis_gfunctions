@@ -5,8 +5,8 @@ branches:
   only:
     - master
 script:
-  - npm install
   - cd functions
+  - npm install
   - npm run lint
   - npm run test
   - cd ..
