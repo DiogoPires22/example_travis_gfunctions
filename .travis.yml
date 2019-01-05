@@ -6,7 +6,7 @@ branches:
     - master
 before_script:
   - cd functions
-after_scripts:
+after_script:
   - cd ..
 script:
   - npm install
