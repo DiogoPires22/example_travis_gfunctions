@@ -4,12 +4,17 @@ node_js:
 branches:
   only:
     - master
+before_install:
+  - cd functions
+install:
+  - npm install
+after_install:
+  - cd ..
 before_script:
   - cd functions
 after_script:
   - cd ..
 script:
-  - npm install
   - npm run lint
   - npm run test
 deploy:
